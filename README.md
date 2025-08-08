@@ -77,3 +77,4 @@ All tests should pass after NovaSolve applies fixes.
 These are realistic, high-signal bugs that produce clear test failures and minimal diffs when fixed.
 
 
+# demo
