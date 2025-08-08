@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-08-08T01:43:05.743734Z",
+  "tests_failed": [
+    {
+      "name": "tests/test_core.py::test_calc_total_expected_formula",
+      "error": "Exception in _fix_single_test: Server error '503 Service Unavailable' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\nTraceback (most recent call last):\n  File \"/Users/seb/Dev/Nova/nova-solve-v2/nova_solve/engine/runner.py\", line 825, in _solve_inner\n    result = self._fix_single_test(failure)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/seb/Dev/Nova/nova-solve-v2/nova_solve/engine/runner.py\", line 1158, in _fix_single_test\n    diff, usage = self.llm_client.call_model(\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/flask-demo-repo/.venv/lib/python3.12/site-packages/backoff/_sync.py\", line 105, in retry\n    ret = target(*args, **kwargs)\n          ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/seb/Dev/Nova/nova-solve-v2/nova_solve/engine/llm.py\", line 316, in call_model\n    response.raise_for_status()\n  File \"/private/tmp/flask-demo-repo/.venv/lib/python3.12/site-packages/httpx/_models.py\", line 829, in raise_for_status\n    raise HTTPStatusError(message, request=request, response=self)\nhttpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\n"
+    },
+    {
+      "name": "tests/test_core.py::test_admin_action_handles_none_user",
+      "error": "Patch failed after 10 attempts. Last error: Malformed diff \u2013 likely truncated or corrupted."
+    }
+  ],
+  "llm_prompt": "",
+  "llm_response": "",
+  "tests_fixed": [
+    "tests/test_core.py::test_process_items_includes_last_element"
+  ],
+  "tests_still_failed": [
+    "tests/test_core.py::test_calc_total_expected_formula",
+    "tests/test_core.py::test_admin_action_handles_none_user"
+  ]
+}
