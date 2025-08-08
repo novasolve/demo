@@ -1,0 +1,7 @@
+__pycache__/
+.env
+.env.local
+.nova_solve_logs/
+.nova/
+.venv/
+*.pyc
